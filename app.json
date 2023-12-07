@@ -2,15 +2,19 @@
   "expo": {
     "name": "estudihambre",
     "slug": "estudihambre",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/adaptive-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "scheme": "com.aless4ndro.estudihambre",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -21,10 +25,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.aless4ndro.estudihambre",
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "aless4ndro"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4cb08655-b487-4f87-b772-07a96fd468f3"
+      }
     }
   }
 }
